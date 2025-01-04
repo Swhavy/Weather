@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/Weather app images/rain.png">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Weather app images/rain.png" />
+  </head>
+  <body>
     <div class="container">
-        <div class="search">
-            <input type="search" placeholder="enter city name" id="input"
-            spellcheck="false">
-            <button class="search-icon" id="search-icon">
-                <img src="/Weather app images/search.png" width="50" height="30">
-            </button>
+      <div class="search">
+        <input
+          type="search"
+          placeholder="enter city name"
+          id="input"
+          spellcheck="false"
+        />
+        <button class="search-icon" id="search-icon">
+          <img src="./Weather app images/search.png" width="50" height="30" />
+        </button>
+      </div>
+      <p class="error" id="error">Invalid Input</p>
+      <div class="weather-info" id="weather-Info">
+        <div class="weather-condition-icon">
+          <img
+            src="./Weather app images/clouds.png"
+            alt="Humidity"
+            width="224"
+            height="224"
+            id="weather-image"
+          />
         </div>
-        <p class="error" id="error">Invalid Input</p>
-        <div class="weather-info" id="weather-Info">
-            <div class="weather-condition-icon">
-                <img src="/Weather app images/clouds.png"  alt="Humidity" width="224" height="224" id="weather-image">
+        <h1 class="weather-degree" id="temp">8°C</h1>
+        <h2 class="city" id="location">New York</h2>
+        <div class="additional-info">
+          <div class="humidity">
+            <div class="info">
+              <img
+                src="./Weather app images/humidity.png"
+                alt="Humidity"
+                width="50"
+                height="50"
+              />
+              <div class="value">
+                <h3 id="humidity">48%</h3>
+                Humidity
+              </div>
             </div>
-                <h1 class="weather-degree" id="temp">
-                    8°C
-                </h1>
-            <h2 class="city" id="location">
-                New York
-            </h2>
-            <div class="additional-info">
-                <div class="humidity">
-                   <div class="info">
-                    <img src="/Weather app images/humidity.png" alt="Humidity" width="50" height="50"  >
-                    <div class="value">
-                       <h3 id="humidity">48%</h3>
-                        Humidity
-                    </div>
-                   </div>
-                </div>
-                <div class="wind">
-                   <div class="info">
-                    <img src="/Weather app images/wind.png" alt="weather wind" width="50" height="50">
-                    <div class="value">
-                        <h3 id="wind">10.29 Km/h</h3>
-                        Wind speed
-                    </div>
-                   </div>
-                </div>
+          </div>
+          <div class="wind">
+            <div class="info">
+              <img
+                src="./Weather app images/wind.png"
+                alt="weather wind"
+                width="50"
+                height="50"
+              />
+              <div class="value">
+                <h3 id="wind">10.29 Km/h</h3>
+                Wind speed
+              </div>
             </div>
-          
+          </div>
         </div>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

@@ -1,4 +1,7 @@
-const apiKey = '57a34bfe0775c209904185fc2c4d2797'
+import dotenv from 'dotenv'
+dotenv.config()
+
+const apiKey = process.env.apikey
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?'
 let temp = document.getElementById('temp')
 let humidity = document.getElementById('humidity')
@@ -26,22 +29,22 @@ async function checkweather(city) {
     place.innerHTML = data.name
     wind.innerHTML = data.wind.speed + 'Km/hr'
     if (data.weather[0].main == 'Rain') {
-      weatherImage.src = '/Weather app images/rain.png'
+      weatherImage.src = './Weather app images/rain.png'
       weatherImage.alt = 'rain'
     } else if (data.weather[0].main == 'Clouds') {
-      weatherImage.src = '/Weather app images/clouds.png'
+      weatherImage.src = './Weather app images/clouds.png'
       weatherImage.alt = 'clouds'
     } else if (data.weather[0].main == 'Drizzle') {
-      weatherImage.src = '/Weather app images/drizzle.png'
+      weatherImage.src = './Weather app images/drizzle.png'
       weatherImage.alt = 'drizzzle'
     } else if (data.weather[0].main == 'Mist') {
-      weatherImage.src = '/Weather app images/mist.png'
+      weatherImage.src = './Weather app images/mist.png'
       weatherImage.alt = 'mist'
     } else if (data.weather[0].main == 'Clear') {
-      weatherImage.src = '/Weather app images/clear.png'
+      weatherImage.src = './Weather app images/clear.png'
       weatherImage.alt = 'clear'
     } else if (data.weather[0].main == 'Snow') {
-      weatherImage.src = '/Weather app images/snow.png'
+      weatherImage.src = './Weather app images/snow.png'
       weatherImage.alt = 'snow'
     }
     console.log(data)
