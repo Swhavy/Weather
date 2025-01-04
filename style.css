@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container{
+background:linear-gradient(135deg, #00feba, #5b548a) ;
+margin: auto;
+width: 90%;
+max-width:470px ;
+height: 580px;
+margin-bottom: 30px;
+border-radius: 25px;
+}
+
+.search{
+margin-top: 30px;
+width: 100%;
+max-width:470px ;
+height:80px ;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+}
+input{
+    width: 25vw ;
+    height: 4vw;
+    border-radius: 25px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.search img{
+    width: 2vw ;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 3vw;
+    height:3vw;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: none;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-degree{
+    color: aliceblue;
+    font-size: 5vw;
+
+}
+
+.city{
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+.additional-info{
+    width: 100%;
+    height:150px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end ;
+}
+
+.humidity .info{
+    width: 13vw;
+    height: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.humidity .value{
+    width: 23vw ;
+    margin-left: 20px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+.wind .info{
+    width: 14vw;
+    height: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 53%;
+}
+
+.wind .value{
+    width:14vw ;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60px;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.wind .value h3{
+    white-space: nowrap;
+}
+
+.error{
+    display: none;
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+    color: aliceblue;
+}
